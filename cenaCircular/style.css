@@ -1,0 +1,195 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-color: aliceblue;
+}
+#circuloBase {
+  position: absolute;
+  left: 470px;
+  top: 110px;
+  width: 410px;
+  height: 410px;
+  border: 3px solid #000;
+  border-radius: 100%;
+  background-color: #87ceeb;
+  overflow: hidden;
+}
+.meialua {
+  position: absolute;
+  top: 200px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 10px 5px 0px 2px gray;
+}
+.piramide1 {
+  position: absolute;
+  left: 140px;
+  top: 240px;
+  transform: rotate(37deg);
+  width: 190px;
+  height: 220px;
+  border: 2px solid #000;
+  background-color: #666;
+  z-index: 3;
+  overflow: hidden;
+}
+.ladonegro1 {
+  position: absolute;
+  top: -70px;
+  left: 0px;
+  transform: rotate(45deg);
+  width: 320px;
+  height: 190px;
+  background-color: #e0dd1d;
+}
+.piramide2 {
+  position: absolute;
+  left: 55px;
+  top: 220px;
+  transform: rotate(37deg);
+  width: 190px;
+  height: 220px;
+  border: 2px solid #000;
+  background-color: #666;
+  z-index: 2;
+  overflow: hidden;
+}
+.ladonegro2 {
+  position: absolute;
+  top: -70px;
+  left: 0px;
+  transform: rotate(45deg);
+  width: 220px;
+  height: 150px;
+  background-color: #e0dd1d;
+}
+.coroaSolar {
+  position: absolute;
+  top: 70px;
+  left: 260px;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 5px dashed #ebe834;
+  animation: coroaSolarAnimada 15s infinite linear;
+}
+.sol {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #ebe834;
+}
+.passarosVoando {
+  position: absolute;
+  left: 120px;
+  top: 60px;
+}
+.passaro1 {
+  position: absolute;
+  left: 10px;
+  top: 50px;
+  width: 30px;
+  height: 2px;
+  border-radius: 10% 120% 10% 120%;
+  background-color: #000;
+  transform-origin: bottom right;
+  animation: passaroanima 1s infinite linear;
+}
+.passaro2 {
+  position: absolute;
+  left: 40px;
+  top: 50px;
+  width: 30px;
+  height: 2px;
+  border-radius: 120% 10% 120% 10%;
+  background-color: #000;
+  transform-origin: bottom left;
+  animation: passaroanima2 1s infinite linear;
+}
+.passaro3 {
+  position: absolute;
+  left: 60px;
+  top: 00px;
+  width: 20px;
+  height: 1px;
+  border-radius: 10% 120% 10% 120%;
+  background-color: #000;
+  transform-origin: bottom right;
+  animation: passaroanima 1s infinite linear;
+}
+.passaro4 {
+  position: absolute;
+  left: 80px;
+  top: 00px;
+  width: 20px;
+  height: 1px;
+  border-radius: 120% 10% 120% 10%;
+  background-color: #000;
+  transform-origin: bottom left;
+  animation: passaroanima2 1s infinite linear;
+}
+.passaro5 {
+  position: absolute;
+  left: 60px;
+  top: 90px;
+  width: 20px;
+  height: 2px;
+  border-radius: 10% 120% 10% 120%;
+  background-color: #000;
+  transform-origin: bottom right;
+  animation: passaroanima 1s infinite alternate;
+}
+.passaro6 {
+  position: absolute;
+  left: 80px;
+  top: 90px;
+  width: 20px;
+  height: 2px;
+  border-radius: 120% 10% 120% 10%;
+  background-color: #000;
+  transform-origin: bottom left;
+  animation: passaroanima2 1s infinite alternate;
+}
+
+@keyframes coroaSolarAnimada {
+  0% {
+    transform: scale(1) rotate(180deg);
+  }
+  50% {
+    transform: scale(1.2)rotate(240deg);
+  }
+  100% {
+    transform: scale(1)rotate(360deg);
+  }
+}
+@keyframes passaroanima {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes passaroanima2 {
+  0% {
+    transform: rotate(15deg);
+  }
+
+  50% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
+}
